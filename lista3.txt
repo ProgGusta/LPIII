@@ -105,3 +105,34 @@ Q7)
 23- {
 24-    print ("hora: " + hora + ", min: " + min);
 25- }
+
+Q8)
+1- //Modelo hora precisa
+2- dado hora, min, Segundo, centesimo
+3- 
+4- operação isvalidation(hora, min, Segundo, centesimo)
+5- {
+6-    se hora >= 0 && <= 24 and min >= 0 && <= 60 and Segundo >= 0 && <= 60 and centesimo >= 0 && <= 1:
+7-       return true;
+8-    se não:
+9-       return false;
+10-}
+11-
+12- operação inicializaHora(hora, min, Segundo, centesimo)
+13-{ 
+14-  se ( isvalidation(hora, min, Segundo, centesimo) ):
+15-     this.hora = hora;
+16-     this.min = min;
+17-     this.segundo = Segundo;
+18-     this.centesimo = centesimo;
+19-  se não:
+20-     this.hora = 0;
+21-     this.min = 0;
+22-     this.segundo = 0;
+23-     this.centesimo = 0;
+24-}
+25-
+26- operação mostraHora(hora, min, Segundo, centesimo)
+27- {
+28-    print(hora + ":" + min ":" + Segundo + ":" centesimo);
+29- }
