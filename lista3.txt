@@ -1,0 +1,57 @@
+Atividade - lista 3 -> modelos
+
+Q1)
+1- //modelo lampada
+2- inicio
+3- dado tipo_lampada, marca, preço;
+4- 
+5- isFunciona()
+6- {
+7-	 se lampada funciona
+8-		return true
+9-	 se nao
+10-		return false
+11- }
+12-
+13- ValidaCompra()
+14- {
+15- 	se compra confirmada
+16- 		return true;
+17- }
+
+Q2)
+1- //modelo lampada
+2- inicio
+3- dado estado_lampada;
+4-
+5- operação meia_luz()
+6- {
+7- 		estado da lmapada = aceso * 0,5;
+8- }
+9- 
+10- //outras operações são iguais as passadas na questão
+
+Q3)
+1- //Modelo lampada
+2- inicio 
+3- dado estado_lampada;
+4-
+5- operação luminosidade(input)
+6- {
+7-		se input >= 0 && input <= 100
+8-			estado_lampada = input
+9- }
+
+
+Q4)
+1- //operação estado da lampada
+2- dado isLigado = true;
+3- 
+4- operação lig_des(estado_lampada)
+5- {
+6-		se estado_lampada = aceso
+7- 			isLigado = true
+8-		se nao 
+9-			isLigado = false
+10 }			
+
