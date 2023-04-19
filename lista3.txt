@@ -7,15 +7,15 @@ Q1)
 4- 
 5- isFunciona()
 6- {
-7-	 se lampada funciona
+7-	 se lampada funciona:
 8-		return true
-9-	 se nao
+9-	 se nao:
 10-		return false
 11- }
 12-
 13- ValidaCompra()
 14- {
-15- 	se compra confirmada
+15- 	se compra confirmada:
 16- 		return true;
 17- }
 
@@ -38,7 +38,7 @@ Q3)
 4-
 5- operação luminosidade(input)
 6- {
-7-		se input >= 0 && input <= 100
+7-		se input >= 0 && input <= 100:
 8-			estado_lampada = input
 9- }
 
@@ -49,9 +49,59 @@ Q4)
 3- 
 4- operação lig_des(estado_lampada)
 5- {
-6-		se estado_lampada = aceso
+6-		se estado_lampada = aceso:
 7- 			isLigado = true
-8-		se nao 
+8-		se nao: 
 9-			isLigado = false
 10 }			
 
+Q5) 
+1-operação abreConta(Nome, deposito, especial)
+2-{
+3-   Nome_do_correntista = Nome;
+4-
+5-   se deposito < 0:
+6-     saldo = 0.00;
+7-   se nao:
+8-     saldo = deposito;
+9-   
+10-  Conta_é_especial = especial;
+11-}
+
+Q6)
+1-operação abreContaSimples(Nome)
+2-{
+3-  Nome_do_correntista = Nome;
+4-  
+5-  se saldo < 0:
+6-     alert ("Seu saldo está negativo");
+7- 
+8-  conta_é_especial = false;
+9-}
+
+Q7)
+1- // Hora precisa
+2- dado hora, min;
+3- 
+4- operação isvalidation(hora, min)
+5- {
+6-    se hora >= 0 && hora <= 24 && min >= 0 && min <= 60:
+7-       return true;
+8-    se não:
+9-       return false;
+10- }
+11-
+12- operação inicializaData(hora, min)
+13- {
+14-    se ( isvalidation(hora, min) ):
+15-       this.hora = hora;
+16-       this.min = min;
+17-    se não:
+18-       this.hora = 0;
+19-       this.min = 0;
+20- }
+21-
+22- operação mostraHora(hora, min)
+23- {
+24-    print ("hora: " + hora + ", min: " + min);
+25- }
