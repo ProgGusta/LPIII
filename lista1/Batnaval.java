@@ -159,7 +159,7 @@ public class Batnaval
                 coluna = input.nextInt();
                 if(linha > 4 || linha < 0 || coluna > 4 || coluna < 0)
                     System.out.println("Coordenada invalida. Digite novamente");
-                else if(Hitplayer1[linha][coluna] != '-')
+                else if(Hitplayer2[linha][coluna] != '-')
                 {
                     System.out.println("Coordenada ja selecionada. Escolha outra");
                     control = true;
