@@ -26,6 +26,18 @@ public class Contato
             this.ano = 0;
         }
     }
+    
+    // construtor adicional
+    public Contato (String nome, String email, String telefone)
+    {
+        this(nome, email, telefone, 0, 0, 0);
+    }
+
+    //construtor nome
+    public Contato (String nome)
+    {
+        this(nome, "", "");
+    }
 
     //validação data 
     private boolean dateValidation(int dia, int mes, int ano)
@@ -102,7 +114,7 @@ public class Contato
     //calcular idade 
     public void calculateAge()
     {
-        //pega a data atual do computador 
+        //pega a data atual do computador
         Calendar now = GregorianCalendar.getInstance();
         int diaAtual = now.get(Calendar.DAY_OF_MONTH);
         int mesAtual = now.get(Calendar.MONTH);
